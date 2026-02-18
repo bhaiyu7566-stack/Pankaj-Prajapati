@@ -1,0 +1,153 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+header{
+    width: 100%; height: auto;
+    background-image:url('narsinghgarh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around; 
+    height: auto;
+}
+nav .menu a{
+    width: 25%; 
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.menu a:hover{
+    transform: scale(1.3);
+    cursor: pointer; 
+}
+nav .menu a:first-child{
+    color: #00b894;
+}
+main{
+    width: 100%;height: 85vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+section .btnone{
+    background: #fff;
+    color: #000; 
+}
+.btnone:hover{
+    background: #d11638;
+    color: white;
+}
+section .btntwo{
+    background: #00b894;
+    color: white;
+}
+.btntwo:hover{
+    background: #2d19c9;
+    color: #000; 
+}
+section .btnthree{
+    background: #00b815;
+    color: rgb(192, 20, 20);
+}
+.btnthree:hover{
+     background: #af19c9;
+    color: #3784bf; 
+}
+.change_content:after{
+    content:"";
+    animation: changetext 20s infinite linear;
+    color: #b8009c;
+}
+@keyframes changetext{
+    0%{content:"NARSINGHGARH'S BEUTY";}
+    10%{content:"NARSINGHGARH FORT";}
+    20%{content:"JAL MANDIR";}
+    30%{content:"CHIDIKHO";}
+    40%{content:"NADIYAPANI";}
+    50%{content:"CHOTA TALAB";}
+    60%{content:"HANUAMN GADHI";}
+    70%{content:"BADA MAHADEV TEMPLE";}
+    80%{content:"MARUTI NANDAN TEMPLE";}
+    90%{content:"CHOTA MAHADEV TEMPLE";}
+    100%{content:"SAKA SHYAM JI TEMPLE";}
+}
+ footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;height: 25%;
+    text-align: center;
+    padding: 10px 0;}
+p.p14{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #ac66b8; 
+    font-size: 30px;
+    font-weight: 300;} 
+h4{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #c91fc9; 
+    font-size: 40px;
+    font-weight: 300;}
+h3.H23{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #4f4fc1; 
+    font-size: 25px;
+    font-weight: 300;}
+p.p15{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #6adbd7; 
+    font-size: 25px;
+    font-weight: 300;}

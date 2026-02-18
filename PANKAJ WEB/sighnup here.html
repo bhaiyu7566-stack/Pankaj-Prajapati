@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+ <head><title>WWW.PANKAJ.COM</title>
+ </head>
+ <body>&nbsp;&nbsp;
+     <style>
+           h1{
+             margin: 0;
+             padding: 0;
+             text-align: center;
+             color: #000000; 
+             background-color: darkcyan;
+             font-size: 55px;
+             font-weight: 700;}
+           body{background-color:lightslategray; text-align: center ; font-size:25px;}
+           form{ margin: 0;
+             padding: 0;
+             text-align: center;
+             color: #000000; 
+             background-color: lightslategray;height: 100%; font-size: 30px;}
+           footer{
+             position: fixed;
+             bottom: 0%;
+             width: 100%;height: 25%;
+             background-color: grey;
+             text-align: center;
+             padding: 10px 0;}
+          p.p14{
+             margin: 0;
+             padding: 0;
+             text-align: center;
+             color: #34116f; 
+             font-size: 30px;
+             font-weight: 300;} 
+           h4{
+             margin: 0;
+             padding: 0;
+             text-align: center;
+             color: #34116f; 
+             font-size: 40px;
+             font-weight: 300;}
+            h3{
+             margin: 0;
+             padding: 0;
+             text-align: center;
+             color: #4614dd; 
+             font-size: 25px;
+             font-weight: 300;}
+            p.p15{
+             margin: 0;
+             padding: 0;
+             text-align: center;
+             color: #621bdb; 
+             font-size: 25px;
+             font-weight: 300;}
+             .btn{
+              display: inline-block;
+              padding: 10px 20px;
+              background: #e3dfe7;
+              color: rgb(119, 45, 189);
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              font-size: 15px;}
+              .b1{
+                display: inline-block;
+              padding: 10px 20px;
+              background: #441885;
+              color: rgb(207, 204, 209);
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              font-size: 13px;}
+              .btn1{
+              text-align: left; 
+              color: aliceblue;
+              }         
+     </style><header>
+     <h1>Signup Here:-</h1>
+     <a href="INDEX.HTML" class="btn1">Back to home</a>    
+         <form id="sighnupform"
+         onsubmit="return checkLogin()"><br>     
+         <label for="fname">First Name:</label>
+         <input type="text" id="fname" placeholder="Enter your First name">&nbsp;&nbsp;<br><br>
+         <label for="lname">Last Name:</label>
+         <input type="text" id="lname" placeholder="Enter your Last name">&nbsp;&nbsp;<br><br>
+         <label for="num">Phone Number:</label>
+         <input type="number" id="num" placeholder="Enter your Phone Number">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+         <label for="pwd">Password:</label>
+         <input type="password" id="pwd" minlength="8"placeholder="Enter a password"><br><br>
+         <button class="btn" type="submit">SUBMIT</button>
+         <button class="b1" type="reset">CLEAR</button><br><br><br><br><br><br><br><br>
+          </form> <script>
+       function checkLogin() { 
+       let fname = document.getElementById("fname").value.trim();
+       let lname = document.getElementById("lname").value.trim();
+       let phone = document.getElementById("num").value.trim();
+       let password = document.getElementById("pwd").value.trim();
+        if (fname === "" || lname === "" || phone === "" || password === "") {
+        alert("❌ please fill in all details!");
+        return false;}
+        if (phone.length !== 10 || isNaN(phone)) {
+        alert("❌ Phone number should be exactly 10 digit!");
+        return false;}
+        if (password.length < 6) {
+        alert("❌ Password must be at least 6 characters long!");
+        return false;}
+        alert("✅ Verification Successful!");
+      window.location.href =
+      "indexx.html";
+      return false;}
+        </script>
+        </header>
+      <footer> 
+         <p class="p14">This website created by:-</p><br>
+         <h4>&nbsp;&nbsp;PANKAJ PRAJAPATI</h4><br>
+         <h3>TRADE:-&nbsp;&nbsp;COPA</h3>
+         <p class="p15">GOVT. ITI NARSINGHGARH (M.P.)</p><br><br>
+      </footer>
+ </body>
+</html>
